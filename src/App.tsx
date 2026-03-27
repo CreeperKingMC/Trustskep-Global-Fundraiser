@@ -29,7 +29,7 @@ export default function App() {
           </div>
           <div>
             <a 
-              href="https://www.zeffy.com/en-US/donation-form/e930534d-e885-4508-8723-21b86797617c" 
+              href="https://www.zeffy.com/en-US/donation-form/trustskep-global-solar-panels-for-tech-center" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-sm"
@@ -110,7 +110,7 @@ export default function App() {
 
             <div className="space-y-4 mt-8">
               <a
-                href="https://www.zeffy.com/en-US/donation-form/e930534d-e885-4508-8723-21b86797617c"
+                href="https://www.zeffy.com/en-US/donation-form/trustskep-global-solar-panels-for-tech-center"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center py-4 px-8 border border-transparent rounded-xl shadow-sm text-lg font-bold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
