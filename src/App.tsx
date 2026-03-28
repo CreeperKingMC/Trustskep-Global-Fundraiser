@@ -89,7 +89,7 @@ export default function App() {
                 title="Donation thermometer powered by Zeffy"
                 style={{ position: 'relative', border: 0, width: '100%', height: '120px' }}
                 src="https://www.zeffy.com/en-US/embed/thermometer/trustskep-global-solar-panels-for-tech-center"
-                allowTransparency
+                allowtransparency="true"
               ></iframe>
             </div>
 
@@ -103,8 +103,8 @@ export default function App() {
                 title="Donation form powered by Zeffy"
                 style={{ position: 'relative', border: 0, width: '100%', height: '650px' }}
                 src="https://www.zeffy.com/en-US/embed/donation-form/trustskep-global-solar-panels-for-tech-center"
-                allowPaymentRequest
-                allowTransparency
+                allowpaymentrequest="true"
+                allowtransparency="true"
               ></iframe>
             </div>
           </motion.div>
