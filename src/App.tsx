@@ -29,9 +29,7 @@ export default function App() {
           </div>
           <div>
             <a 
-              href="https://www.zeffy.com/en-US/donation-form/e930534d-e885-4508-8723-21b86797617c" 
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#donate" 
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-sm"
             >
               Donate Now
@@ -41,13 +39,13 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <section className="pt-32 pb-16 lg:pt-40 lg:pb-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-12 items-start">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7"
+            className="w-full"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm font-medium mb-6">
               <Sun className="w-4 h-4 text-amber-500" />
@@ -72,7 +70,7 @@ export default function App() {
               </p>
             </div>
 
-            <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-video mb-8">
+            <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 aspect-video mb-12">
               <iframe 
                 width="100%" 
                 height="100%" 
@@ -84,43 +82,30 @@ export default function App() {
                 allowFullScreen
               ></iframe>
             </div>
-          </motion.div>
 
-          {/* Donation Card */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            id="donate"
-            className="lg:col-span-5 bg-white rounded-3xl p-8 shadow-2xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden lg:sticky lg:top-28"
-          >
-            <div className="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
-            <h3 className="text-2xl font-bold mb-2">Fund Solar Panels</h3>
-            <p className="text-slate-500 text-sm mb-6">Choose an amount to support our clean energy project.</p>
-            
-            <div className="mb-8">
-              <div className="flex justify-between text-sm mb-2">
-                <span className="font-semibold text-slate-700">$0 raised</span>
-                <span className="text-slate-500 font-medium">Goal: ${totalCost.toLocaleString()}</span>
-              </div>
-              <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
-                <div className="bg-blue-600 h-3 rounded-full" style={{ width: '5%' }}></div>
-              </div>
+            {/* Zeffy Thermometer */}
+            <div className="w-full mb-8">
+              <iframe
+                title="Donation thermometer powered by Zeffy"
+                style={{ position: 'relative', border: 0, width: '100%', height: '120px' }}
+                src="https://www.zeffy.com/en-US/embed/thermometer/trustskep-global-solar-panels-for-tech-center"
+                allowTransparency
+              ></iframe>
             </div>
 
-            <div className="space-y-4 mt-8">
-              <a
-                href="https://www.zeffy.com/en-US/donation-form/e930534d-e885-4508-8723-21b86797617c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex items-center justify-center py-4 px-8 border border-transparent rounded-xl shadow-sm text-lg font-bold text-white bg-blue-600 hover:bg-blue-700 transition-colors"
-              >
-                Donate on Zeffy
-              </a>
-              <div className="flex items-center justify-center gap-2 text-sm text-slate-500">
-                <Lock className="w-4 h-4" />
-                <span>Secure, encrypted payment processing by Zeffy</span>
-              </div>
+            {/* Donation Card */}
+            <div 
+              id="donate"
+              className="w-full bg-white rounded-3xl shadow-2xl shadow-slate-200/50 border border-slate-100 relative overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 w-full h-2 bg-blue-600 z-10"></div>
+              <iframe
+                title="Donation form powered by Zeffy"
+                style={{ position: 'relative', border: 0, width: '100%', height: '650px' }}
+                src="https://www.zeffy.com/en-US/embed/donation-form/trustskep-global-solar-panels-for-tech-center"
+                allowPaymentRequest
+                allowTransparency
+              ></iframe>
             </div>
           </motion.div>
         </div>
