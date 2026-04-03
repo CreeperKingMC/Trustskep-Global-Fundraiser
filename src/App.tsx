@@ -29,7 +29,9 @@ export default function App() {
           </div>
           <div>
             <a 
-              href="#donate" 
+              href="https://www.zeffy.com/en-US/donation-form/trustskep-global-solar-panels-for-tech-center" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-sm"
             >
               Donate Now
@@ -194,7 +196,9 @@ export default function App() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="#donate" 
+              href="https://www.zeffy.com/en-US/donation-form/trustskep-global-solar-panels-for-tech-center" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-slate-900 bg-white rounded-full hover:bg-slate-100 transition-colors"
             >
               Donate Now
