@@ -7,6 +7,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.addEventListener('error', function(e) {
+        document.body.innerHTML += '<div style="color:red; padding:20px; font-family:sans-serif;"><h3>Error loading site:</h3><p>' + e.message + '</p><p>Check the browser console for more details.</p></div>';
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
