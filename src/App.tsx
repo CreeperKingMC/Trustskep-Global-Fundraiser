@@ -76,7 +76,7 @@ export default function App() {
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/VRuE9bneOhU?si=rOOQBxILXTDxjEy4" 
+                src="https://www.youtube.com/embed/VRuE9bneOhU?si=rOOQBxILXTDxjEy4&cc_load_policy=1" 
                 title="Trustskep Global Video" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
